@@ -1,0 +1,20 @@
+:root{
+    --color: blue;
+    --size: 50px;
+    --width: 50px;
+    --speed: 2s;
+}
+
+.loader{
+    width: var(--size);
+    height: var(--size);
+    margin: 0 auto;
+    border: var(--width) solid transparent;
+    border-top: var(--width) solid var(--color);
+    border-radius: 50%;
+    animation: rotate var(--speed) infinite linear;
+}
+@keyframes rotate{
+    from{transform: rotate(0);}
+    to{transform: rotate(360deg);}
+}
