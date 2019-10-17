@@ -1,0 +1,24 @@
+.code{
+    background-image: linear-gradient(to left, $color-primary-dark-2, $color-primary-dark-1);
+    color: $color-secondary-1;
+    box-shadow: $shadow-1;
+    font-size: $font-size-default;
+    &__title{
+        color: $color-primary-light-1;
+        font-size: $font-size-default;
+    }
+
+    &__copy{
+        font-size: $font-size-small-2;
+        padding: 1px 5px;
+        border-radius: 3px;
+        color: $color-primary-dark-1;
+        background-color: $color-primary-light-1;
+        &:hover{
+            transition: all .3s linear;
+            cursor: pointer;
+            box-shadow: $shadow-1;
+        }
+    }
+}
+

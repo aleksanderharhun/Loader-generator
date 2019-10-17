@@ -5,10 +5,10 @@ export default class ControlPannel extends React.Component{
     render(props){
         let value = this.props.values.sizeValue;
         return(
-            <div>
-                <div>Ajust Your Loader</div>
+            <div className="controlpannel">
+                <div className="controlpannel__title">Ajust Your Loader</div>
                 <label>
-                    Size
+                    Radius:
                     <input 
                         type="range" 
                         value={this.props.values.sizeValue}
@@ -19,7 +19,7 @@ export default class ControlPannel extends React.Component{
                 </label>       
                 
                 <label>
-                    Width
+                    Width:
                     <input 
                         type="range" 
                         value={this.props.values.widthValue}
@@ -29,7 +29,7 @@ export default class ControlPannel extends React.Component{
                 </label>
 
                 <label>
-                    Speed
+                    Speed:
                     <input 
                         type="range" 
                         value={this.props.values.speedValue}
@@ -39,7 +39,7 @@ export default class ControlPannel extends React.Component{
                 </label>
 
                 <label>
-                    Color
+                    <span className="controlpannel__span">Color:</span>   
                     <input 
                         type="color" 
                         value={this.props.values.colorValue}

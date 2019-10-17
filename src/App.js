@@ -1,7 +1,5 @@
 import React from 'react';
-import './App.css';
 import $ from 'jquery';
-
 import ControlPannel from './components/ControlPannel';
 import Loader from './components/Loader';
 import LoaderCode from './components/LoaderCode';
@@ -12,9 +10,9 @@ class App extends React.Component{
     this.state = {
       controlPannel: {
         color: "#000",
-        sizeValue: "50",
-        widthValue: "4",
-        speedValue: "10"
+        sizeValue: "85",
+        widthValue: "5",
+        speedValue: "20"
       }
     }
   }
@@ -35,7 +33,7 @@ class App extends React.Component{
 
   render(){
     return (
-      <div>
+      <div className="app">
         <ControlPannel 
           values={this.state.controlPannel} 
           onChange={(evt,idetifier) => this.updateSize(evt,idetifier)}

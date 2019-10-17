@@ -1,0 +1,37 @@
+
+@import url('https://fonts.googleapis.com/css?family=Merriweather+Sans&display=swap');
+
+:root{
+    --color: #fff;
+    --size: 50px;
+    --width: 50px;
+    --speed: 2s;  
+}
+
+
+//vars
+$color-primary-dark-1: rgb(42, 42, 37);
+$color-primary-dark-2: rgb(78, 78, 71);
+$color-primary-light-1: rgb(255, 255, 255);
+$color-primary-light-2: rgb(202, 206, 218);
+
+$color-secondary-1: rgb(245, 118, 71);
+
+$font-size-small-2: .8rem;
+$font-size-small: 1rem;
+$font-size-default: 1.2rem;
+$font-size-h1: 1.8rem;
+$font-size-h2: 1.6rem;
+$font-size-h3: 1.4rem;
+
+$shadow-1: .4rem .4rem .5rem $color-primary-dark-1;
+
+body{
+    font-size: 62.5%;
+    font-family:  'Merriweather Sans', sans-serif;
+}
+
+@import './App.scss';
+@import './components/ControlPannel.scss';
+@import './components/LoaderCode.scss';
+@import './components/Loader.scss';
