@@ -1,6 +1,11 @@
 
 @import url('https://fonts.googleapis.com/css?family=Merriweather+Sans&display=swap');
 
+html,body{
+    margin: 0;
+    padding: 0;
+}
+
 :root{
     --color: #fff;
     --size: 50px;

@@ -15,22 +15,21 @@ export default class LoaderCode extends React.Component{
         let color = this.props.values.color;
         let speed = Math.round(this.props.values.speedValue/30*100)/100 + "s";
         let cssCode = 
-        `   .loader{
-        width: ${size};
-        height: ${size};
-        margin: 0 auto;
-        border: ${width} solid transparent;
-        border-top: ${width} solid ${color};
-        border-radius: 50%;
-        animation: rotate ${speed} infinite linear;
-    }
+    `.loader{
+    width: ${size};
+    height: ${size};
+    margin: 0 auto;
+    border: ${width} solid transparent;
+    border-top: ${width} solid ${color};
+    border-radius: 50%;
+    animation: rotate ${speed} infinite linear;
+}
 
-    @keyframes rotate{
-        from{transform: rotate(0)}
-        to{transform: rotate(360deg)}
-    }
-        `
-        let htmlCode = `    <div class="loader"></div>`;
+@keyframes rotate{
+    from{transform: rotate(0)}
+    to{transform: rotate(360deg)}
+}`
+        let htmlCode = `<div class="loader"></div>`;
         
         return(
             <div className="code">

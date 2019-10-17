@@ -1,9 +1,6 @@
 import React from 'react';
 
 export default class Loader extends React.Component{
-    updateColor(color){
-        document.getElementById('root').style.setProperty("--loader-color",color);
-    }
     updateSize(newSize){
         newSize+="px";
         document.getElementById('root').style.setProperty("--size",newSize);
@@ -18,7 +15,6 @@ export default class Loader extends React.Component{
         document.getElementById('root').style.setProperty("--speed",speed);
     }
     updateColor(color){
-        console.log(color);
         document.getElementById('root').style.setProperty("--color",color);
     }
 

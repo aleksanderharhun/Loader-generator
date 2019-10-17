@@ -1,9 +1,7 @@
 import React from 'react';
-import $ from 'jquery';
 
 export default class ControlPannel extends React.Component{
     render(props){
-        let value = this.props.values.sizeValue;
         return(
             <div className="controlpannel">
                 <div className="controlpannel__title">Ajust Your Loader</div>

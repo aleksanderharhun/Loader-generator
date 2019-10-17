@@ -3,6 +3,9 @@
     color: $color-secondary-1;
     box-shadow: $shadow-1;
     font-size: $font-size-default;
+    @media only screen and (max-width: 30em){
+        font-size: $font-size-small-2;
+      }
     &__title{
         color: $color-primary-light-1;
         font-size: $font-size-default;
