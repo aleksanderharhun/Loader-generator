@@ -1,3 +1,9 @@
+[Demo](https://aleksanderharhun.github.io/Loader-generator/)
+This program allows to create simple one-ring (currently) css loaders. 
+By drag and selest controls you can choose color, size, line width and speed of the loader.
+After adjustment you can copy an use css and html code in you project. 
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
